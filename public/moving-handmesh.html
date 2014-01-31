@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Moving Hand Mesh</title>
+
+		<!-- CSS -->
+  	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" >
+
+	</head>
+
+	<body class="demo">
+			<div id="output" class="output">
+				<div class="leap-data">
+					<div class="hand output-item">
+						<p><span class="val-name">Palm Position:</span> <span id="handPosition"></span></p>
+
+						<p><span class="val-name">Palm Pitch:</span> <span id="handPitch"></span></p>
+						<p><span class="val-name">Palm Yaw:</span> <span id="handYaw"></span></p>
+						<p><span class="val-name">Palm Roll:</span> <span id="handRoll"></span></p>
+					</div>
+					<div class="pointable output-item">
+						<p><span class="val-name">Middle</span>
+						<span id="finger0Visible"></span>
+						<span id="finger0Rotation"></span></p>
+					</div>
+					<div class="pointable output-item">
+						<p><span class="val-name">Ring</span>
+						<span id="finger1Visible"></span>
+						<span id="finger1Rotation"></span></p>
+					</div>
+					<div class="pointable output-item">
+						<p><span class="val-name">index</span>
+						<span id="finger2Visible"></span>
+						<span id="finger2Rotation"></span></p>
+					</div>
+					<div class="pointable output-item">
+						<p><span class="val-name">Little</span>
+						<span id="finger3Visible"></span>
+						<span id="finger3Rotation"></span></p>
+					</div>
+					<div class="pointable output-item">
+						<p><span class="val-name">Thumb</span>
+						<span id="finger4Visible"></span>
+						<span id="finger4Rotation"></span></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="viewport"></div>
+		<script src="javascripts/three.min.js"></script>
+		<script src="javascripts/jquery.js"></script>
+		<script src="javascripts/leap.min.js"></script>
+		<script src="javascripts/moving-handmesh.js"></script>
+	
+		
+	</body>			
+</html>

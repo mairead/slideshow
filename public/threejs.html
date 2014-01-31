@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Three JS basics</title>
+
+		<!-- CSS -->
+  	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" >
+
+	</head>
+
+	<body class="demo">
+
+			<div class="threejs-controls output">
+
+				<div class="wrapper">
+				<!-- change mesh -->
+				<div class="control-item">
+					<p>
+						<a id="cube" href="#">Cube</a> | 
+						<a id="sphere" href="#">Sphere</a> | 
+						<a id="torus" href="#">Torus</a>
+					</p>
+				</div>
+
+				<!-- change materials -->
+				<div class="control-item">
+					<p>
+						<a id="basic" href="#">Basic</a> | 
+						<a id="lambert" href="#">Lambert</a> | 
+						<a id="phong" href="#">Phong</a> | 
+						<a id="normal" href="#">Normal</a>
+					</p>
+				</div>
+
+				<!-- change lighting -->
+				<div class="control-item">
+					<p>
+						<a id="spotlight" href="#">Spotlight</a> | 
+						<a id="ambient" href="#">Ambient</a> | 
+						<a id="remove" href="#">No light</a>
+					</p>
+				</div>
+
+				<!-- move camera -->
+				<div class="control-item">
+					<p>
+						<a id="cameraLeft" href="#">Left</a> | 
+						<a id="cameraCenter" href="#">Center</a> | 
+						<a id="cameraRight" href="#">Right</a>
+					</p>
+				</div>
+
+			</div>
+
+			<div class="viewport"></div>
+	
+		<script src="javascripts/three.min.js"></script>
+		<script src="javascripts/jquery.js"></script>
+		<script src="javascripts/threejs-basics.js"></script>
+		
+		
+	</body>			
+</html>

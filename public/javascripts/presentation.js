@@ -1,5 +1,8 @@
+$(function() {
+
 // Get the canvas DOM element 
-var canvas = document.getElementById('canvas');
+
+var canvas = $("#canvas")[0];
 
 // Creates our Leap Controller
 var controller = new Leap.Controller();
@@ -16,8 +19,12 @@ var disableFlag = false;
 
 var pauseControlsFlag = false;
 
-var arrowsImg = document.getElementById('arrows');
-var lightsImg = document.getElementById('lights');
+var currentSlide = 1;
+
+var arrowsImg = $("#arrows");
+var lightsImg = $("#lights");
+
+var slideshow = $("#slideshow");
 
 	// Making sure we have the proper aspect ratio for our canvas
 canvas.width = canvas.clientWidth;
@@ -130,7 +137,7 @@ function drawHandPoints(){
 function disableSlides(){
   controlTimer ++;
 
-  if (controlTimer >= 20) {
+  if (controlTimer >= 15) {
     //reset controlTimer 
     controlTimer = 0;
 
@@ -149,14 +156,22 @@ function disableSlides(){
 
       //swap lights image to show as off
       lights.src = "images/lights-off.png";
+
+      //end current slideshow state and reset pauseTimer
+      endPauseMode();
+
     };
 
-    //reset controls and arrow state to begin again
+    //reset controls timer
     resetControls();
   }
 }
 
 function moveSlides(){
+
+  // console.log("in move Slides pause is", pauseControlsFlag);
+
+
   controlTimer ++;
 
   //if the arrows were disabled set to active count state
@@ -166,7 +181,11 @@ function moveSlides(){
   };
 
   //move slides when count is reached
-  if (controlTimer >= 20) {
+  if (controlTimer >= 15 && arrowState === 1) {
+
+    console.log("stage 2 - GO", controlTimer)
+
+    //console.log("control timer in moveSlides", controlTimer)
     //reset controlTimer 
     controlTimer = 0;
     
@@ -180,44 +199,85 @@ function moveSlides(){
 }
 
 function scrollNextSlide(){
+  //console.log("scroll next called");
 
+  // var currentPos = slideshow.offset().top;
+  // var newPos = currentPos+ (650 * (currentSlide));
+  // newPos = newPos + "px";
 
+  var newSlide = currentSlide+1;
+  //console.log(newSlide, $('#slide-'+newSlide))
 
-  //fake setTimeout here to mimic slide controls and then trigger changeSlideState function
-  var timeoutID = window.setTimeout(updateSlideState, 2000);
+  var anchor = $('#slide-'+newSlide);
+
+  var anchorTop = anchor.offset().top
+
 
   //scroll to function to animate slides upwards in vertical direction
+  $("html, body").animate({ scrollTop: anchorTop-225 }, 1000).promise().done(function(){
 
-    //once callback from animation is complete
+ 
+      //once callback from animation is complete
+      updateSlideState();
+      //console.log("animate callback called")
+    
+  });
 
-  
-
-      
+  //fake setTimeout here to mimic slide controls and then trigger changeSlideState function
+  //var timeoutID = window.setTimeout(updateSlideState, 2000);
 
 }
 
 function updateSlideState(){
+  //console.log("slide moved", $(".active"))
   //remove active state from previous slide
+  $(".active").removeClass("active");
 
   //set active state on current slide
+  //currentSlide ++;
+
+  //console.log(currentSlide, $(".slide").eq(currentSlide).find("h1").text());
+
+  $(".slide").eq(currentSlide).addClass("active");
+
+   //set active state on current slide
+  currentSlide ++;
 
   //reset control Timer
-  resetControls();
+  //resetControls();
+
+  //start pause
+  startPauseMode();
 };
 
-function resetControls(){
+function startPauseMode(){
 
-  //set pauseFlag every time state is reset;
+  console.log("start Pause");
+  //reset control states
+  arrowState = 3;
+  updateArrows();
+
+  //set pauseFlag
   pauseControlsFlag = true;
   pauseTimer = 0;
+}
 
-  //reset counter to prevent control being activated
-  controlTimer = 0;
+function endPauseMode(){
 
+  console.log("end pause called");
   //reset control states
   arrowState = 0;
   updateArrows();
 
+  //reset pauseFlag 
+  pauseControlsFlag = false;
+  pauseTimer = 0;
+
+}
+
+function resetControls(){
+  //reset counter to prevent control being activated
+  controlTimer = 0;
 }
 
 function updateArrows(){
@@ -231,12 +291,32 @@ function updateArrows(){
     case 2:
       arrows.src = "images/arrows-next.png";
       break;
+    case 3:
+      arrows.src = "images/arrows-disabled.png";
+      break;
   }
 }
 
 
 // Tells the controller what to do every time it sees a frame
 controller.on( 'frame' , function(frame){
+
+  //if pause has been triggered
+  if (pauseControlsFlag) { 
+    //increment pauseTimer to unlock controls
+    pauseTimer ++;
+
+    //console.log("pause", pauseTimer);
+    //when it is done reset flag back to false and reset to 0;
+    if (pauseTimer >= 90) {
+      endPauseMode();
+    };
+
+  };
+
+    //console.log("state of pause", pauseControlsFlag)
+    //console.log(handPos[1])
+
 
  //determine if Hand is visible and assign variable
   if (frame.hands[0]) {
@@ -260,26 +340,15 @@ controller.on( 'frame' , function(frame){
         //Clears the canvas so we are not drawing multiple frames 
         c.clearRect( 0 , 0 , width , height );
 
-        //increment pauseTimer to unlock controls
-        pauseTimer ++;
-
-        //when it is done reset flag back to false and reset to 0;
-        if (pauseTimer >= 20) {
-          pauseControlsFlag = false;
-          pauseTimer = 0;
-        };
-
         //add a hand position item to array
         handPoints.push(newPoint);
         fadeHandPoints();
 
-        //listen for disable controls
-
-        console.log(handPos[1])
-
         //listen for move slides
         if (handPos[1] > 250) {
+          //listen for disable controls
           if (!pauseControlsFlag && !disableFlag) {
+            //console.log("pauseFlag and disable", pauseControlsFlag, disableFlag)
             moveSlides();
           };
           
@@ -290,6 +359,8 @@ controller.on( 'frame' , function(frame){
 
         }else{
           resetControls();
+          //start pause
+          //startPauseMode();
         }
 
         //reset counter
@@ -297,6 +368,8 @@ controller.on( 'frame' , function(frame){
       }
     }else{
       resetControls();
+      //start pause
+      //startPauseMode();
       c.clearRect( 0 , 0 , width , height );
     }
   }
@@ -305,3 +378,5 @@ controller.on( 'frame' , function(frame){
 
 // Get frames rolling by connecting the controller
 controller.connect();
+
+});

@@ -113,6 +113,8 @@ h1{
 }
 
 .slideshow{
+/*  position: absolute;
+  top:0;*/
   width:1024px;
   border-top:30px solid #424242;
   padding-top:2px;
@@ -122,7 +124,7 @@ h1{
 .slide{height:700px; border-bottom:16px solid #F16A3B;border-top:8px solid #62C7CC;margin-bottom:2px;}
 .slide-content{position:relative;height:650px;}
 
-/*.slide .slide-content{opacity:0.5;}*/
+.slide .slide-content{opacity:0.5;}
 .slide.active .slide-content{opacity:1;}
 
 .slide ul{

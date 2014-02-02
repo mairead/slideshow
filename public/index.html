@@ -13,12 +13,12 @@
 		<div class="logo">
 			<img src="/images/presentation-logo.png" />
 		</div>
-			<div class="slideshow">
+			<div class="slideshow" id="slideshow">
 
 				<!-- //slide 1 jokes. lol -->
-				<div class="slide">
+				<div class="slide active">
 					<div class="slide-content">
-						<h1>Congratulations</h1>
+						<h1 id="slide-1">Congratulations</h1>
 						<p class="lead">[Pause for laughs]</p>
 
 						<div class="notes">
@@ -28,9 +28,9 @@
 				</div>
 
 				<!-- //slide 2 introduction -->
-				<div class="slide active">
+				<div class="slide">
 					<div class="slide-content">
-						<h1>Hello</h1>
+						<h1 id="slide-2">Hello</h1>
 						<p class="lead">My name is Mairead.</p>
 						<ul>
 							<li>
@@ -54,7 +54,7 @@
 				<!-- //slide 3 Contents of talk -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Technology stack</h1>
+						<h1 id="slide-3">Technology stack</h1>
 						<div class="fig">
 							<img src="/images/stack.png">
 						</div>
@@ -64,7 +64,7 @@
 				<!-- //slide 4 3D motion sensing -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>3D motion sensing</h1>
+						<h1 id="slide-4">3D motion sensing</h1>
 						<p class="lead">Devices that detect motion in Euclidean space</p>
 						<ul>
 							<li>
@@ -86,7 +86,7 @@
 				<!-- //slide 5 The Leap motion devices -->
 				<div class="slide">
 					<div class="slide-content ">
-						<h1>Leap Motion device</h1>
+						<h1 id="slide-5">Leap Motion device</h1>
 						<ul>
 							<li>
 								<p>Near field mode</p>
@@ -113,7 +113,7 @@
 				<!-- //slide 6 Leap JS library -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Leap JS library</h1>
+						<h1 id="slide-6">Leap JS library</h1>
 						<p class="lead">Javascript API for handling device data</p>
 						<ul>
 							<li>
@@ -146,7 +146,7 @@
 				<!-- //slide 7 3D canvas and WebGL  -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>3D in Browser</h1>
+						<h1 id="slide-7">3D in Browser</h1>
 						<p class="lead">WebGL canvas context</p>
 						<p></p>
 						<ul>
@@ -171,7 +171,7 @@
 				<!-- //slide 8 Three JS -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Enter ThreeJs</h1>
+						<h1 id="slide-8">Enter ThreeJs</h1>
 						<p class="lead">Mr.Doob = Legend</p>
 						<ul>
 							<li>
@@ -197,7 +197,7 @@
 				<!-- //slide 9 Demo ThreeJs capability -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>ThreeJS basics</h1>
+						<h1 id="slide-9">ThreeJS basics</h1>
 						<ul>
 							<li>
 								<p>Stage</p>
@@ -227,7 +227,7 @@
 				<!-- //slide 10 Serious maths -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Here comes the science</h1>
+						<h1 id="slide-10">Here comes the science</h1>
 						<p class="lead">Euclidean geometry</p>
 						<p>Describing the motion of items in space</p>
 						<ul>
@@ -244,7 +244,7 @@
 				<!-- //slide 11 Vectors-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Vectors</h1>
+						<h1 id="slide-11">Vectors</h1>
 						<p class="lead">Describe direction</p>
 						<p>From one point in space to another</p>
 						<div class="fig coords">
@@ -256,7 +256,7 @@
 				<!-- //slide 12 Rotation -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Rotation</h1>
+						<h1 id="slide-12">Rotation</h1>
 						<p class="lead">Euler Angles</p>
 						<p>Describe the angle of rotation around each axis</p>
 						<div class="fig coords angles">
@@ -268,7 +268,7 @@
 				<!-- //slide 13 Gimbal -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Gimbal locking</h1>
+						<h1 id="slide-13">Gimbal locking</h1>
 						<p class="lead">The Problem of angles in calculating rotation</p>
 						<div class="fig coords">
 							<img src="/images/gimbal.png">
@@ -280,7 +280,7 @@
 				<!-- //slide 14 Pitch roll and yaw -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Pitch, Roll and Yaw</h1>
+						<h1 id="slide-14">Pitch, Roll and Yaw</h1>
 						<p class="lead">Tait-Bryan angles</p>
 						<ul>
 							<li>
@@ -297,7 +297,7 @@
 				<!-- //slide 15 Blender -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>3D modelling software</h1>
+						<h1 id="slide-15">3D modelling software</h1>
 						<p class="lead">Blender</p>
 						<ul>
 							<li>
@@ -326,7 +326,7 @@
 				<!-- //slide 16 Demo armature and model -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Using Armature</h1>
+						<h1 id="slide-16">Using Armature</h1>
 						<p class="lead">Based on model by Erik90mx</p>
 						<ul>
 							<li>
@@ -349,7 +349,7 @@
 				<!-- //slide 17 Three JS plugin export -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Blender to ThreeJs</h1>
+						<h1 id="slide-17">Blender to ThreeJs</h1>
 						<p class="lead">Exporting JSON for ThreeJs Loader method</p>
 						<ul>
 							<li>
@@ -372,7 +372,7 @@
 				<!-- //slide 18 Hand and finger movement code -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Position and rotation</h1>
+						<h1 id="slide-18">Position and rotation</h1>
 						<p class="lead">Generating hand movement</p>
 						<p>Based on work from a couple of blog posts</p>
 						<ul>
@@ -389,7 +389,7 @@
 				<!-- //slide 19 Hand and finger movement code -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Positioning Hand</h1>
+						<h1 id="slide-19">Positioning Hand</h1>
 						<pre>
 var hand = frame.hands[0];
 
@@ -409,7 +409,7 @@ bones[0].rotation.set(rotation.x, rotation.y, rotation.z);
 				<!-- //slide 20 Hand and finger movement code -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Positioning Fingers</h1>
+						<h1 id="slide-20">Positioning Fingers</h1>
 						<pre>
 var fingerDir = finger.pointable.direction;
 
@@ -429,7 +429,7 @@ for (var i = 0, length = finger.phalanges.length;
 				<!-- //slide 21 Demo hand model -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>The thing</h1>
+						<h1 id="slide-21">The thing</h1>
 						<p class="lead">Moving hand and fingers</p>
 						<ul>
 							<li>
@@ -454,7 +454,7 @@ for (var i = 0, length = finger.phalanges.length;
 				<!-- //slide 22 end animation -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Conclusion</h1>
+						<h1 id="slide-22">Conclusion</h1>
 						<p class="lead">Further work required</p>
 						<ul>
 							<li>
@@ -474,7 +474,7 @@ for (var i = 0, length = finger.phalanges.length;
 				<!-- //slide 23 end animation -->
 				<div class="slide">
 					<div class="slide-content">
-						<h1>Fin.</h1>
+						<h1 id="slide-23">Fin.</h1>
 						<p class="lead">Thanks for coming!</p>
 						<ul>
 							<li>
@@ -492,11 +492,6 @@ for (var i = 0, length = finger.phalanges.length;
 
 			</div>
 			<!-- End of slideshow -->
-		<!-- 	<div class="hand-detection">
-				<div class="disable-slideshow">&nbsp;</div>
-				<div class="next-target">&nbsp;</div>
-				<div class="show-notes">&nbsp;</div>
-			</div> -->
 
 			 <div class="controls">
 		      <img src="images/lights.png" id="lights" class="lights">

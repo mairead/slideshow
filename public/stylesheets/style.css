@@ -185,9 +185,14 @@ h1{
 
 /* three js demo */
 .code-sample{
-  margin:0 50px;
+  clear:both;
+  width:850px;
+  background: #444;
+  color: #fff;
+  margin:0 auto;
   font-family: courier;
   font-size:20px;
+  padding:20px;
 }
 
 .code-sample p{

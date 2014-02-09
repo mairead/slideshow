@@ -7,6 +7,9 @@ var spotlight;
 var currentObj;
 var currentShape = 'cube';
 var currentMaterial = new THREE.MeshBasicMaterial( { color: 0xFF0000 } );
+var codeSample = $("#code");
+
+var globalMaterial;
 
 container = document.querySelector('.viewport');
 
@@ -86,6 +89,8 @@ $(function() {
 		camera.position.set(30, 10, 10);
 		camera.lookAt(scene.position);
 
+		swapInCodeSample("camera");
+
 		e.preventDefault();
 	})
 
@@ -117,18 +122,22 @@ $(function() {
 		spotlight.distance = 0;
 		scene.add(spotlight);
 
+		globalMaterial.needsUpdate = true;
 		//renderer.render(scene, camera);
+		swapInCodeSample("lighting");
 
 		e.preventDefault();
 	})
 
 	$("#remove").bind("click", function(e){
+		globalMaterial.needsUpdate = true;
 		scene.remove(light);
 		scene.remove(spotlight);
 		e.preventDefault();
 	})
 
 	$("#ambient").bind("click", function(e){
+		globalMaterial.needsUpdate = true;
 		scene.add(light);
 		e.preventDefault();
 	})
@@ -141,6 +150,7 @@ $(function() {
 
 	$("#lambert").bind("click", function(e){
 		createObj(currentShape, 'lambert');
+		swapInCodeSample("material");
 		e.preventDefault();
 	});
 
@@ -159,6 +169,8 @@ $(function() {
 	//bind geometry
 	$("#cube").bind("click", function(e){
 		createObj('cube', currentMaterial);
+
+		swapInCodeSample("geometry");
 		e.preventDefault();
 	});
 
@@ -224,7 +236,9 @@ function createObj(shape, material){
 	 		break;
 	 	}	
 
-	var mesh = new THREE.Mesh( geometry, material );
+	 	globalMaterial = material;
+
+	var mesh = new THREE.Mesh( geometry, globalMaterial );
 
 	mesh.position.set(10, 2, 0);
 	if (currentShape === 'torus') {
@@ -236,3 +250,31 @@ function createObj(shape, material){
 
 }
 
+function swapInCodeSample(code){
+	var codeSampleTxt;
+
+	var geometryTxt = "<p>var geometry = new THREE.CubeGeometry( 5, 5, 5 );</p><p>var mesh = new THREE.Mesh( geometry, material );</p><p>mesh.position.set(10, 2, 0);</p>";
+
+	var materialTxt = "<p>var material = new THREE.MeshBasicMaterial( { color: 0xFF0000 } );</p><p>var mesh = new THREE.Mesh( geometry, material );</p><p>mesh.position.set(10, 2, 0);</p>";
+
+	var lightingTxt = "<p>spotlight = new THREE.SpotLight(0xFFFFFF);</p><p>spotlight.position.set(300, 300, 0);</p><p>spotlight.lookAt(currentObj);</p>";
+
+	var	cameraTxt = "<p>camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR);</p><p>camera.position.set(30, 10, 0);</p><p>camera.lookAt(scene.position);</p>";
+
+	switch(code){
+		case "geometry":
+		codeSampleTxt = geometryTxt;
+		break;
+		case "material":
+		codeSampleTxt = materialTxt;
+		break;
+		case "lighting":
+		codeSampleTxt = lightingTxt;
+		break;
+		case "camera":
+		codeSampleTxt = cameraTxt;
+		break;
+	}
+
+	codeSample.html(codeSampleTxt);
+}

@@ -183,6 +183,17 @@ h1{
   color:#F16A3B;
 }
 
+/* three js demo */
+.code-sample{
+  margin:0 50px;
+  font-family: courier;
+  font-size:20px;
+}
+
+.code-sample p{
+  margin:5px;
+}
+
 /*
   RGB XYZ colours from three js helper axis 
   x pitch

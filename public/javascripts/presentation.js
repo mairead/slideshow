@@ -6,6 +6,7 @@ $(function() {
 
   // Creates our Leap Controller
   var controller = new Leap.Controller();
+
   var frameCounter = 0;
 
   var handPoints = [];

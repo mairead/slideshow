@@ -6,6 +6,7 @@
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
+var golden_path = require('./routes/golden_path');
 var http = require('http');
 var path = require('path');
 
@@ -33,6 +34,9 @@ app.get('/users', user.list);
 app.get('/slides', function(req, res){
   res.sendfile('./public/index.html');
 });
+
+
+app.get('/golden_path', golden_path.manifesto);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

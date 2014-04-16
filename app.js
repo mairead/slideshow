@@ -37,6 +37,7 @@ app.get('/slides', function(req, res){
 
 
 app.get('/golden_path', golden_path.manifesto);
+app.get('/golden_path_revisited', golden_path.revisited);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

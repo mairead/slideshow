@@ -231,6 +231,25 @@ h1{
   font-size:20px;
 }
 
+.quotation{
+  text-align: center;
+ /* background: #444;
+  border:2px solid #62C7CC;*/
+  border-radius:30px;
+  padding:10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+.footnote{
+  text-align: center;
+}
+
+.footnote p{
+  color: #ccc;
+  font-size: 14px;
+}
+
 .golden-path p{
   line-height: 1.4em;
 }

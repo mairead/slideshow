@@ -44,7 +44,7 @@ a {
   width:1024px;
 }
 
-.logo {padding-top:200px;}
+/*.logo {padding-top:200px;}*/
 
 .presentation {
   background: #fff;
@@ -66,10 +66,160 @@ h1{
 }
 
 .lead{
-  color:#62C7CC;
+  color: #62C7CC;
   font-weight: bold;
-  font-size:40px;
+  font-size: 40px;
 }
+
+/* portfolio */
+
+.portfolio{
+  margin: 0;
+  padding: 0;
+  background: #424242; /* Old browsers */
+  background: -moz-linear-gradient(top,  #424242 2%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#424242), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #424242 2%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #424242 2%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #424242 2%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #424242 2%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+ 
+}
+
+.footer{
+  background: #F16A3B;
+  margin-top: 50px;
+  color: #fff;
+}
+.footer p{
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.homepage{
+  text-align: left;
+}
+.homepage .header{
+  text-align: center; 
+}
+.homepage .section {
+  border: 0;
+  background: #fff;
+  border-radius: 30px;
+  margin: 0 0 50px 0;
+  border: 2px solid #F16A3B ;
+  padding: 20px 50px 50px 50px;
+}
+
+.homepage h1{
+  font-size: 86px;
+  line-height: 30px;
+  margin-bottom: 65px;
+}
+
+.homepage h2{
+  line-height: 20px;
+  font-size: 70px;
+  color: #F16A3B;
+  font-family:'retro';
+  margin-bottom: 70px;
+}
+
+.homepage h3{
+  line-height: 40px;
+  font-size: 40px;
+  color: #F16A3B;
+  font-family:'retro';
+  margin-bottom: 10px;
+}
+
+.homepage  a:hover, .homepage  a:focus, .homepage  a:active{
+  color:#92B72D;
+  transition: all 0.5s;
+}
+
+.homepage .logo{
+  padding: 20px 0 20px 0;
+  display: inline-block;
+}
+.profile{
+  border: 2px solid #F16A3B ;
+  float: right;
+  margin: 0 0 20px 40px;
+  border-radius: 30px;
+/*  position: absolute;
+  right: -60px;
+  bottom: -60px;*/
+}
+
+.homepage .section-intro p{
+  margin-right: 250px;
+}
+
+.homepage .section{
+  clear: both;
+  position: relative;
+
+}
+.homepage p{
+  color: #424242;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.homepage .navigation{
+  text-align: center;
+}
+
+.homepage .navigation ul, .homepage .navigation li{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.homepage .navigation ul{
+
+  margin-left: -15px;
+}
+.homepage .navigation li{
+  font-family: 'retro';
+  font-size: 48px;
+}
+
+.homepage .navigation a{
+  display: block; 
+  padding: 20px;
+  text-transform: uppercase;
+}
+.homepage .navigation a:hover, .homepage .navigation a:focus, .homepage .navigation a:active{
+  color: #fff;
+  transition: all 0.5s;
+}
+
+
+.portfolio-item{
+  padding-bottom: 100px;
+  clear: both;
+/*  position: relative;
+  left: -80px;*/
+
+}
+.portfolio-thumbnail{
+  float: left;
+  margin: 0 30px 20px 0;
+  border: 2px solid #62C7CC;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background: #fff;
+}
+
+/* ------------- */
+
+
+
 
 .presentation .wrapper, .demo .wrapper{
   width:1280px;
@@ -77,6 +227,9 @@ h1{
   position: relative;
   text-align: left;
 }
+
+
+
 
 /* Slideshow controls */
 #canvas{
@@ -374,6 +527,9 @@ sub{
   color: #666;
   font-size:14px;
 }
+
+
+
 /* TODO: make media queries to shrink page wrapper after 1024 to 100% fluid and shrink Headings for mobile */
 
 @media (max-width: 1024px) {

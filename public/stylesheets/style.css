@@ -89,8 +89,13 @@ h1{
 
 .footer{
   background: #F16A3B;
-  margin-top: 50px;
   color: #fff;
+  position: relative;
+}
+.spaceship{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
 }
 .footer p{
   padding: 10px;
@@ -101,6 +106,12 @@ h1{
 
 .homepage{
   text-align: left;
+  width: 1039px;
+  
+}
+.tesselation{
+  padding: 0 50px 50px;
+  background: url(../images/tessellations.png) repeat 0 0 ;
 }
 .homepage .header{
   text-align: center; 
@@ -115,7 +126,7 @@ h1{
 }
 
 .homepage h1{
-  font-size: 86px;
+  font-size: 78px;
   line-height: 30px;
   margin-bottom: 65px;
 }
@@ -150,9 +161,6 @@ h1{
   float: right;
   margin: 0 0 20px 40px;
   border-radius: 30px;
-/*  position: absolute;
-  right: -60px;
-  bottom: -60px;*/
 }
 
 .homepage .section-intro p{
@@ -180,8 +188,7 @@ h1{
   margin: 0;
 }
 .homepage .navigation ul{
-
-  margin-left: -15px;
+  margin-left: -10px;
 }
 .homepage .navigation li{
   font-family: 'retro';
@@ -202,9 +209,6 @@ h1{
 .portfolio-item{
   padding-bottom: 100px;
   clear: both;
-/*  position: relative;
-  left: -80px;*/
-
 }
 .portfolio-thumbnail{
   float: left;

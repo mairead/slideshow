@@ -2,110 +2,110 @@ extends portfolio-layout
 
 block content
 	div.wrapper.homepage
+		div.tesselation
+			div.header
 
-		div.header
+				img.logo(src="images/logo.png")
+			nav.navigation
+					ul
+						li
+							a(href='#intro') Introduction
+						li
+							a(href='#development') Development
+						li
+							a(href='#design') Design
+						li
+							a(href='#experimental') Experimental
+			div.section.section-intro#intro
 
-			img.logo(src="images/logo.png")
-		nav.navigation
-				ul
-					li
-						a(href='#intro') Introduction
-					li
-						a(href='#development') Development
-					li
-						a(href='#design') Design
-					li
-						a(href='#experimental') Experimental
-		div.section.section-intro#intro
+				h1 Welcome to Emdeebeebee.com
 
-			h1 Welcome to Emdeebeebee.com
+				img.profile(src="images/mairead.jpg")
+				
+				p.lead My name is Mairead and I am a creative web developer, based in London, specialising in exciting interactive experiences. I'm interested in any technology that pushes the boundaries of web development and am always looking for new ideas to harness what the internet can do for us.
 
-			img.profile(src="images/mairead.jpg")
-			
-			p.lead My name is Mairead and I am a creative web developer, based in London, specialising in exciting interactive experiences. I'm interested in any technology that pushes the boundaries of web development and am always looking for new ideas to harness what the internet can do for us.
+				p 
+					|I work as a full stack developer but I prefer Front End technologies. You can see some 
+					|<a href='#development'> recent examples of my work</a>
 
-			p 
-				|I work as a full stack developer but I prefer Front End technologies. You can see some 
-				|<a href='#development'> recent examples of my work</a>
+				p I am also a graphic designer. When I'm not making websites I like to make other things: Costume design, Set design, Game design and other toys.
 
-			p I am also a graphic designer. When I'm not making websites I like to make other things: Costume design, Set design, Game design and other toys.
+				p 
+					|This year I started a project to try to improve the Front End development eco-system. You can read my articles about the 
+					|<a href='/golden_path'>Golden Path Project</a>
+					| and 
+					|<a href='/golden_path_revisited'>Golden Path revisited</a>
 
-			p 
-				|This year I started a project to try to improve the Front End development eco-system. You can read my articles about the 
-				|<a href='/golden_path'>Golden Path Project</a>
-				| and 
-				|<a href='/golden_path_revisited'>Golden Path revisited</a>
+				p <strong>If you would like to hire me I am currently available from the middle of September 2014. I am also available for speaking at conferences any time.</strong>
 
-			p <strong>If you would like to hire me I am currently available from the middle of September 2014. I am also available for speaking at conferences any time.</strong>
+				p 
+					|You can reach me 
+					|<a href='https://twitter.com/tiny_m'>  @tiny_m</a>
 
-			p 
-				|You can reach me 
-				|<a href='https://twitter.com/tiny_m'>  @tiny_m</a>
+					|or on 
+					|<a href='https://github.com/mairead'>  github/mairead</a>
+			div.section#development
+				h2 Development
 
-				|or on 
-				|<a href='https://github.com/mairead'>  github/mairead</a>
-		div.section#development
-			h2 Development
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Head London
+					p.portfolio-description Responsive Adapative site for one of the leading top 100 digital agencies.
 
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Head London
-				p.portfolio-description Responsive Adapative site for one of the leading top 100 digital agencies.
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Cambridge University
+					p.portfolio-description Responsive fluid templates created for Cambridge University to rebrand and move their web platforms to a forward facing structure
 
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Cambridge University
-				p.portfolio-description Responsive fluid templates created for Cambridge University to rebrand and move their web platforms to a forward facing structure
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Hostelling International
+					p.portfolio-description Responsive desktop and mobile layouts for a Hostelling booking engine with experiential travel marketing format
 
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Hostelling International
-				p.portfolio-description Responsive desktop and mobile layouts for a Hostelling booking engine with experiential travel marketing format
+			div.section.section-design#design
+				h2 Design
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Urban Golf
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Tea on the Lawn
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Hackney Brewery
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
 
-		div.section.section-design#design
-			h2 Design
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Urban Golf
-				p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Tea on the Lawn
-				p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Hackney Brewery
-				p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
-
-		div.section.section-experimental#experimental
-			h2 Experimental
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Amazing Arduino Vote-o-matic
-				p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") Leap Motion 3D hand
-				p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
-			div.portfolio-item
-				a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-					img.portfolio-thumbnail(src="images/thumb-head.jpg")
-				h3.portfolio-title 
-					a(src="http://www.headlondon.com") CultureSucker Facebook App
-				p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+			div.section.section-experimental#experimental
+				h2 Experimental
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Amazing Arduino Vote-o-matic
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") Leap Motion 3D hand
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+				div.portfolio-item
+					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
+						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					h3.portfolio-title 
+						a(src="http://www.headlondon.com") CultureSucker Facebook App
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.

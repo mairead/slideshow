@@ -1,12 +1,12 @@
 .presentation {
-  background: #fff;
-  color: #424242;
+  background: $white;
+  color: $grey;
   padding: 120px 50px 150px;
   font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 .demo{
-  background: #fff;
-  color: #424242;
+  background: $white;
+  color: $grey;
 }
 
 .presentation .wrapper, .demo .wrapper{
@@ -52,12 +52,12 @@
 
 .slideshow{
   width:1024px;
-  border-top:30px solid #424242;
+  border-top:30px solid $grey;
   padding-top:2px;
-  border-bottom:30px solid #424242;
+  border-bottom:30px solid $grey;
 }
 
-.slide{height:700px; border-bottom:16px solid #F16A3B;border-top:8px solid #62C7CC;margin-bottom:2px;}
+.slide{height:700px; border-bottom:16px solid $red;border-top:8px solid $turquoise; margin-bottom:2px;}
 .slide-content{position:relative;height:650px;}
 
 .slide .slide-content{opacity:0.5;}
@@ -110,13 +110,13 @@
   display: block;
 }
 .val-name{
-  color:#62C7CC;
+  color:$turquoise;
   font-weight: bold;
   font-size:1.4em;
 }
 
 .finger-inactive{
-  color:#F16A3B;
+  color:$red;
 }
 
 /* three js demo */
@@ -124,7 +124,7 @@
   clear:both;
   width:850px;
   background: #444;
-  color: #fff;
+  color: $white;
   margin:0 auto;
   font-family: courier;
   font-size:20px;
@@ -142,9 +142,9 @@
   y yaw
 */
     
-.roll-val{color:#F16A3B;}
-.yaw-val{color:#92B72D;}
-.pitch-val{color:#62C7CC;}
+.roll-val{color:$red;}
+.yaw-val{color:$green;}
+.pitch-val{color:$turquoise;}
 
 .control-item{
   width:25%;

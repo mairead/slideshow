@@ -1,10 +1,11 @@
 //vars
 
-$turquoise : #62C7CC;
+$turquoise : #62c7cc;
 $red : #F16A3B;
 $green : #92B72D;
 $grey : #424242;
-
+$orange : #ff9d00;
+$white : #ffffff;
 
 @font-face {
   font-family: 'retro';
@@ -18,7 +19,7 @@ body {
   padding: 50px;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: $grey; 
-  color: #fff;
+  color: $white;
   margin: 0px;
   padding: 0px;
 }
@@ -29,7 +30,7 @@ a {
   text-decoration: none;
 }
 .demo-link a{
-  color: #92B72D;
+  color: $green;
 }
 
 .wrapper{
@@ -43,14 +44,14 @@ a {
 
 h1{
   font-size: 120px;
-  color: #F16A3B;
+  color: $red;
   font-family: 'retro';
   padding: 0;
   margin-bottom: 30px;
 }
 
 .lead{
-  color: #62C7CC;
+  color: $turquoise;
   font-weight: bold;
   font-size: 40px;
 }

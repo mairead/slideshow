@@ -3,14 +3,14 @@
 .portfolio{
   margin: 0;
   padding: 0;
-  background: #424242; /* Old browsers */
-  background: -moz-linear-gradient(top,  #424242 2%, #ffffff 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#424242), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #424242 2%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #424242 2%,#ffffff 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #424242 2%,#ffffff 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #424242 2%,#ffffff 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  background: $grey; /* Old browsers */
+  background: -moz-linear-gradient(top,  $grey 2%, $white 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,$grey), color-stop(100%,$white)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $grey 2%,$white 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $grey 2%,$white 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $grey 2%,$white 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $grey 2%,$white 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grey', endColorstr='$white',GradientType=0 ); /* IE6-9 */
 }
 
 .tesselation{
@@ -30,11 +30,11 @@
 
 .portfolio-thumbnail{
   margin: 0 30px 20px 0;
-  border: 2px solid #424242;
+  border: 2px solid $grey;
   width: 150px;
   height: 150px;
   border-radius: 30px;
-  background: #fff;
+  background: $white;
 }
 
 .portfolio-thumbnail-link{

@@ -13,7 +13,7 @@
   clear: both;
   position: relative;
   border: 0;
-  background: #fff;
+  background: $white;
   border-radius: 30px;
   margin: 0 0 50px 0;
   border: 2px solid $grey;
@@ -24,28 +24,28 @@
   font-size: 78px;
   line-height: 30px;
   margin-bottom: 65px;
-  text-shadow: -2px -2px 0 $grey, 2px -2px 0 #424242, -2px 2px 0 #424242, 2px 2px 0 #424242;
+  text-shadow: -2px -2px 0 $grey, 2px -2px 0 $grey, -2px 2px 0 $grey, 2px 2px 0 $grey;
 }
 
 .homepage h2{
   line-height: 20px;
   font-size: 70px;
-  color: #F16A3B;
+  color: $red;
   font-family:'retro';
   margin-bottom: 70px;
-  text-shadow: -2px -2px 0 #424242, 2px -2px 0 #424242, -2px 2px 0 #424242, 2px 2px 0 #424242;
+  text-shadow: -2px -2px 0 $grey, 2px -2px 0 $grey, -2px 2px 0 $grey, 2px 2px 0 $grey;
 }
 
 .homepage h3{
   line-height: 40px;
   font-size: 40px;
-  color: #F16A3B;
+  color: $red;
   font-family:'retro';
   margin-bottom: 10px;
 }
 
 .homepage  a:hover, .homepage  a:focus, .homepage  a:active{
-  color: #92B72D;
+  color: $green;
   transition: all 0.5s;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .profile{
-  border: 2px solid #424242 ;
+  border: 2px solid $grey ;
   float: right;
   margin: 0 0 20px 40px;
   border-radius: 30px;
@@ -103,11 +103,15 @@
   text-transform: uppercase;
 }
 .homepage .navigation a:hover, .homepage .navigation a:focus, .homepage .navigation a:active{
-  color: #fff;
+  color: $white;
   transition: all 0.5s;
 }
 
 @media (max-width: 1023px) {
+  .homepage{
+    width: 100%;
+  }
+  
   .homepage .logo{
     width: 668px;
     height: 190px;

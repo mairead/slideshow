@@ -121,7 +121,7 @@ h1{
   background: #fff;
   border-radius: 30px;
   margin: 0 0 50px 0;
-  border: 2px solid #F16A3B ;
+  border: 2px solid #424242;
   padding: 20px 50px 50px 50px;
 }
 
@@ -129,6 +129,7 @@ h1{
   font-size: 78px;
   line-height: 30px;
   margin-bottom: 65px;
+  text-shadow: -2px -2px 0 #424242, 2px -2px 0 #424242, -2px 2px 0 #424242, 2px 2px 0 #424242;
 }
 
 .homepage h2{
@@ -137,6 +138,7 @@ h1{
   color: #F16A3B;
   font-family:'retro';
   margin-bottom: 70px;
+  text-shadow: -2px -2px 0 #424242, 2px -2px 0 #424242, -2px 2px 0 #424242, 2px 2px 0 #424242;
 }
 
 .homepage h3{
@@ -145,6 +147,7 @@ h1{
   color: #F16A3B;
   font-family:'retro';
   margin-bottom: 10px;
+  
 }
 
 .homepage  a:hover, .homepage  a:focus, .homepage  a:active{
@@ -157,7 +160,7 @@ h1{
   display: inline-block;
 }
 .profile{
-  border: 2px solid #F16A3B ;
+  border: 2px solid #424242 ;
   float: right;
   margin: 0 0 20px 40px;
   border-radius: 30px;

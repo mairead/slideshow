@@ -1,6 +1,8 @@
 {
-  "name": "application-name",
+  "name": "emdeebeebee",
   "version": "0.0.1",
+  "description": "A portfolio site to showcase my latest work",
+  "main": "Gruntfile.js",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -8,5 +10,14 @@
   "dependencies": {
     "express": "3.4.3",
     "jade": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-contrib-connect": "~0.3.0"
   }
 }

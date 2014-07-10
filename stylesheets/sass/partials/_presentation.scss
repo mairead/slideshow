@@ -1,0 +1,153 @@
+.presentation {
+  background: #fff;
+  color: #424242;
+  padding: 120px 50px 150px;
+  font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.demo{
+  background: #fff;
+  color: #424242;
+}
+
+.presentation .wrapper, .demo .wrapper{
+  width:1280px;
+  margin:0 auto;
+  position: relative;
+  text-align: left;
+}
+
+/* Slideshow controls */
+#canvas{
+  width:  300px;
+  height: 600px;
+  position: fixed;
+  top:250px;
+  right:50px;
+}
+
+.presentation .controls{
+  text-align: center;
+  position: fixed;
+  top:250px;
+  right:50px;
+  width:  300px;
+  height: 500px;
+}
+
+.lights, .arrows{
+  display: inline-block;
+
+}
+.lights{
+  margin-bottom:50px;
+}
+
+.presentation .logo{
+  padding-top: 0;
+  top:20px;
+  position: fixed;
+  right:50px;
+  z-index:2;
+}
+
+.slideshow{
+  width:1024px;
+  border-top:30px solid #424242;
+  padding-top:2px;
+  border-bottom:30px solid #424242;
+}
+
+.slide{height:700px; border-bottom:16px solid #F16A3B;border-top:8px solid #62C7CC;margin-bottom:2px;}
+.slide-content{position:relative;height:650px;}
+
+.slide .slide-content{opacity:0.5;}
+.slide.active .slide-content{opacity:1;}
+
+.slide ul{
+  margin-top:50px;
+}
+
+.fig{
+  text-align: center;
+  padding-top:50px;
+}
+
+.fig.coords{
+  position: absolute;
+  bottom:40px;
+  right:30px;
+  top:none;
+}
+
+.fig.angles{
+ right:20px;
+}
+
+.notes{
+  display:none;
+}
+
+/* Demos */
+
+.output{
+  margin:20px;
+  position: absolute;
+  width:100%;
+}
+.output-item{
+  float:left;
+  margin-right:10px;
+  width:12%;
+}
+
+ .angle-item{
+  width:30%;
+ }
+
+.hand {width:25%;}
+
+.vector-comp{
+  display: block;
+}
+.val-name{
+  color:#62C7CC;
+  font-weight: bold;
+  font-size:1.4em;
+}
+
+.finger-inactive{
+  color:#F16A3B;
+}
+
+/* three js demo */
+.code-sample{
+  clear:both;
+  width:850px;
+  background: #444;
+  color: #fff;
+  margin:0 auto;
+  font-family: courier;
+  font-size:20px;
+  padding:20px;
+}
+
+.code-sample p{
+  margin:5px;
+}
+
+/*
+  RGB XYZ colours from three js helper axis 
+  x pitch
+  z roll
+  y yaw
+*/
+    
+.roll-val{color:#F16A3B;}
+.yaw-val{color:#92B72D;}
+.pitch-val{color:#62C7CC;}
+
+.control-item{
+  width:25%;
+  float:left;
+  text-align: center;
+}

@@ -1,0 +1,77 @@
+//portfolio class added to body tag in separate layout file
+
+.portfolio{
+  margin: 0;
+  padding: 0;
+  background: #424242; /* Old browsers */
+  background: -moz-linear-gradient(top,  #424242 2%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#424242), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #424242 2%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #424242 2%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #424242 2%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #424242 2%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.tesselation{
+  padding: 20px 50px 50px;
+  background: url(../images/tessellations.png) repeat 0 0 ;
+}
+
+.portfolio-item{
+  min-height: 135px;
+  padding-right: 200px;
+  clear: both;
+}
+
+.portfolio-item p{
+  margin-bottom: 0;
+}
+
+.portfolio-thumbnail{
+  margin: 0 30px 20px 0;
+  border: 2px solid #424242;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.portfolio-thumbnail-link{
+  display: block;
+  float: left;
+}
+
+@media (max-width: 1023px) {
+  .tesselation{
+    padding-bottom: 100px;
+  }
+
+  .portfolio-item{
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .tesselation{
+    padding: 10px 10px 200px 10px ;
+  }
+
+  .portfolio-item{
+    text-align: center;
+    padding-right: 0;
+    min-height: auto;
+    padding-bottom: 50px;
+  }
+
+  .portfolio-item p{
+    margin-top: 5px;
+  }
+  .portfolio-thumbnail{
+    float: none;
+    margin: 0;
+  }
+  .portfolio-thumbnail-link{
+    float: none;
+  }
+}

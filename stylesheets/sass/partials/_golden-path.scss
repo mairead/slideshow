@@ -1,0 +1,180 @@
+
+/* Golden path styles */
+
+.golden-path{
+  text-align: left;
+}
+.golden-path .lead{
+
+  font-size:20px;
+}
+
+.quotation{
+  text-align: center;
+  border-radius:30px;
+  padding:10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+.footnote{
+  text-align: center;
+}
+
+.footnote p{
+  color: #ccc;
+  font-size: 14px;
+}
+
+.golden-path p{
+  line-height: 1.4em;
+}
+
+.heading, .problem-expanded h3{
+  text-align: center;
+  font-size:100px;
+  color: #ff9d00;
+  font-family:'retro';
+  padding:0;
+  margin-bottom:60px;
+  margin-top: 0;
+   text-shadow:
+   -2px -2px 0 #fff,  
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+     2px 2px 0 #fff;
+}
+
+h1.heading{
+  font-size: 163px
+}
+
+.problem-expanded h3{
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.problem-expanded p{
+  padding-bottom: 30px;
+}
+
+.section{
+  margin : 20px 20px 60px 20px;
+  padding : 20px 20px 40px 20px;
+  border-bottom: 2px solid #666;
+}
+
+.problem-section{
+  position: relative;
+  min-height: 375px;
+}
+.problem-section h2{
+  position: absolute;
+  top:50%;
+  left:50%;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  border: 4px solid #62C7CC;
+}
+
+
+
+ul.problem-diagram{
+  list-style: none;
+}
+.problem{
+  position: absolute;
+  font-size: 20px;
+}
+
+.problem-1{
+  top:100px;
+  left:20px;
+}
+
+.problem-2{
+  top:45px;
+  left:200px;
+}
+
+.problem-3{
+  top:25px;
+  left:500px;
+}
+
+.problem-4{
+  top:75px;
+  left:700px;
+}
+
+.problem-5{
+  top:200px;
+  left:730px;
+}
+
+.problem-6{
+  top:275px;
+  left:530px;
+}
+
+.problem-7{
+  top:250px;
+  left:200px;
+}
+
+.problem-8{
+  top:200px;
+  left:20px;
+}
+
+.problem-diagram .number{
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  border: 4px solid #62C7CC;
+  height: 20px;
+  color: #ff9d00;
+  width: 20px;
+  margin-right: 10px;
+  padding:5px;
+}
+em{
+  color: #ff9d00;
+}
+sub{
+  color: #666;
+  font-size:14px;
+}
+
+@media (max-width: 1023px) {
+  h1.heading{
+    font-size: 105px;
+  }
+  .heading, .problem-expanded h3{font-size:60px;}
+
+  .problem-section h2{
+    position: static;
+  }
+  .problem{
+    position: static;
+    margin-bottom:20px;
+  }
+  .section{
+    margin : 10px 10px 30px 10px;
+    padding : 10px 10px 20px 10px;
+
+  }
+  .problem-section h2{
+
+    background: none;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-top: 0;
+    border: 0;
+  }
+}

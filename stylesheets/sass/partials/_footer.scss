@@ -1,0 +1,22 @@
+.footer{
+  background: #F16A3B;
+  color: #fff;
+  position: relative;
+}
+.spaceship{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+.footer p{
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (max-width: 767px) {
+  .spaceship{
+    right: -5px;
+  }
+}

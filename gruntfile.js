@@ -80,7 +80,7 @@ module.exports = function (grunt) {
 				},
 				expand: true,
 				cwd: './stylesheets/sass/',
-				src: ['./stylesheets/sass/**/*.scss'],
+				src: ['*.scss'],
 				dest: './public/stylesheets/',
 				ext: '.css'
 			}

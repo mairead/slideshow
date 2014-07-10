@@ -40,6 +40,25 @@
 .portfolio-thumbnail-link{
   display: block;
   float: left;
+  position: relative;
+}
+
+.portfolio-thumb-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  opacity: 0;
+  width: 154px;
+  height: 154px;
+  border-radius: 30px;
+  background: $grey;
+}
+
+.portfolio-thumbnail-link:hover, .portfolio-thumbnail-link:focus{
+  .portfolio-thumb-hover{
+    opacity: 0.4;
+  }
 }
 
 @media (max-width: 1023px) {

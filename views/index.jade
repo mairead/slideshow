@@ -10,11 +10,11 @@ block content
 					ul
 		
 						li
-							a(href='#development') Development
+							a.nav-link(href='#development') Development
 						li
-							a(href='#design') Design
+							a.nav-link(href='#design') Design
 						li
-							a(href='#experimental') Experimental
+							a.nav-link(href='#experimental') Experimental
 			div.section.section-intro#intro
 
 				h1 Welcome to emdeebeebee.com
@@ -25,7 +25,7 @@ block content
 
 				p 
 					|I work as a full stack developer but I prefer Front End technologies. You can see some 
-					|<a href='#development'> recent examples of my work</a>
+					|<a class="nav-link" href='#development'> recent examples of my work</a>
 
 				p I am also a graphic designer. When I'm not making websites I like to make other things: Costume design, Set design, Game design and other toys.
 
@@ -39,72 +39,75 @@ block content
 
 				p 
 					|You can reach me 
-					|<a href='https://twitter.com/tiny_m'>  @tiny_m</a>
+					|<a href='https://twitter.com/tiny_m' target="_blank">  @tiny_m</a>
 
 					|or on 
-					|<a href='https://github.com/mairead'>  github/mairead</a>
+					|<a href='https://github.com/mairead' target="_blank">  github/mairead</a>
 			div.section#development
 				h2 Development
 
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="http://www.headlondon.com" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-head.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Head London
-					p.portfolio-description Responsive Adapative site for one of the leading top 100 digital agencies.
+						a(href="http://www.headlondon.com" target="_blank") Head London
+					p.portfolio-description Responsive adapative site for one of the leading top 100 digital agencies.
 
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="http://www.cam.ac.uk/" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-camuni.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Cambridge University
+						a(href="http://www.cam.ac.uk/" target="_blank") Cambridge University
 					p.portfolio-description Responsive fluid templates created for Cambridge University to rebrand and move their web platforms to a forward facing structure
 
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="https://www.hihostels.com/" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-hi360.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Hostelling International
-					p.portfolio-description Responsive desktop and mobile layouts for a Hostelling booking engine with experiential travel marketing format
+						a(href="https://www.hihostels.com/" target="_blank") Hostelling International
+					p.portfolio-description A 2 view responsive desktop/mobile layout for a Hostelling booking engine with an experiential travel marketing format
 
 			div.section.section-design#design
 				h2 Design
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="http://gentle-galaxy-6884.herokuapp.com/" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-golf.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Urban Golf
-					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+						a(href="http://gentle-galaxy-6884.herokuapp.com/" target="_blank") Urban Golf
+					p.portfolio-description Combining game design, graphic design and event planning. Urban Golf is a game I created for a birthday.
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="http://www.tea-on-the-lawn.com/invitation" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-tea.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Tea on the Lawn
-					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+						a(href="http://www.tea-on-the-lawn.com/invitation" target="_blank") Tea on the Lawn
+					p.portfolio-description A site I created for my wedding with an Art Nouveau flavour
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="http://hackneybrewery.co.uk/" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-hackney.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Hackney Brewery
-					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+						a(href="http://hackneybrewery.co.uk/" target="_blank") Hackney Brewery
+					p.portfolio-description Site redesign for local brewing company. Updating their Wordpress theme into something more human
 
 			div.section.section-experimental#experimental
 				h2 Experimental
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="http://www.headlondon.com/our-thoughts/technology/posts/the-incredible-and-amazing-arduino-vote-o-matic" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-arduino.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Amazing Arduino Vote-o-matic
-					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+						a(href="http://www.headlondon.com/our-thoughts/technology/posts/the-incredible-and-amazing-arduino-vote-o-matic" target="_blank") Arduino Vote-o-matic
+					p.portfolio-description A light sensor triggered voting machine that sent a get request to an online counting mechanism
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="moving-handmesh.html" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-leap.png")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") Leap Motion 3D hand
-					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+						a(href="moving-handmesh.html" target="_blank") Leap Motion 3D hand
+					p.portfolio-description 
+						|Experiments with the Leapmotion and LeapJs to provide gesture detection. You can see my
+						|<a href='/index.html' target="_blank">LondonJS presentation slides</a>
+						| on the topic
 				div.portfolio-item
-					a.portfolio-thumbnail-link(src="http://www.headlondon.com") 
-						img.portfolio-thumbnail(src="images/thumb-head.jpg")
+					a.portfolio-thumbnail-link(href="https://apps.facebook.com/cultureme/?fb_source=bookmark&ref=bookmarks&count=1&fb_bmpos=3_1" target="_blank") 
+						img.portfolio-thumbnail(src="images/thumb-cultureme.jpg")
 					h3.portfolio-title 
-						a(src="http://www.headlondon.com") CultureSucker Facebook App
-					p.portfolio-description Combining game design, graphic design and event planning. Urban Gold is a game I created for an event.
+						a(href="https://apps.facebook.com/cultureme/?fb_source=bookmark&ref=bookmarks&count=1&fb_bmpos=3_1" target="_blank") CultureMe Facebook App
+					p.portfolio-description An R&D project created from a Culture Hack at Kings Institute to add cultural data to a Facebook feed based on your status updates

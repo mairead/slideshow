@@ -1,4 +1,4 @@
-emdeebeebee
+Geek Girl slides
 ===========
 
-Main site and Leap presentation
+Leap motion presentation

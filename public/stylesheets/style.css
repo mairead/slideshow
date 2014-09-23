@@ -1,1 +1,907 @@
-@charset "UTF-8";@font-face{font-family:'retro';src:url("../fonts/retro.eot");src:local("☺"),url("../fonts/retro.woff") format("woff"),url("../fonts/retro.ttf") format("truetype"),url("../fonts/retro.svg") format("svg");font-weight:normal;font-style:normal}body{padding:50px;font:18px "Lucida Grande", Helvetica, Arial, sans-serif;background:#424242;color:#fff;margin:0px;padding:0px}a{color:#62c7cc;font-weight:bold;text-decoration:none}.demo-link a{color:#92b72d}.wrapper{width:1024px;margin:0 auto;text-align:center}.viewport canvas{width:1024px}h1{font-size:120px;color:#f16a3b;font-family:'retro';padding:0;margin-bottom:30px}.lead{color:#62c7cc;font-weight:bold;font-size:40px}@media (max-width: 1023px){.lead{text-align:center}.wrapper{width:100%}}.presentation{background:#fff;color:#424242;padding:120px 50px 150px;font:32px "Lucida Grande", Helvetica, Arial, sans-serif}.demo{background:#fff;color:#424242}.presentation .wrapper,.demo .wrapper{width:1280px;margin:0 auto;position:relative;text-align:left}#canvas{width:300px;height:600px;position:fixed;top:250px;right:50px}.presentation .controls{text-align:center;position:fixed;top:250px;right:50px;width:300px;height:500px}.lights,.arrows{display:inline-block}.lights{margin-bottom:50px}.presentation .logo{padding-top:0;top:20px;position:fixed;right:50px;z-index:2}.slideshow{width:1024px;border-top:30px solid #424242;padding-top:2px;border-bottom:30px solid #424242}.slide{height:700px;border-bottom:16px solid #f16a3b;border-top:8px solid #62c7cc;margin-bottom:2px}.slide-content{position:relative;height:650px}.slide .slide-content{opacity:0.5}.slide.active .slide-content{opacity:1}.slide ul{margin-top:50px}.fig{text-align:center;padding-top:50px}.fig.coords{position:absolute;bottom:40px;right:30px;top:none}.fig.angles{right:20px}.notes{display:none}.output{margin:20px;position:absolute;width:100%}.output-item{float:left;margin-right:10px;width:12%}.angle-item{width:30%}.hand{width:25%}.vector-comp{display:block}.val-name{color:#62c7cc;font-weight:bold;font-size:1.4em}.finger-inactive{color:#f16a3b}.code-sample{clear:both;width:850px;background:#444;color:#fff;margin:0 auto;font-family:courier;font-size:20px;padding:20px}.code-sample p{margin:5px}.roll-val{color:#f16a3b}.yaw-val{color:#92b72d}.pitch-val{color:#62c7cc}.control-item{width:25%;float:left;text-align:center}.golden-path{text-align:left}.golden-path .lead{font-size:20px}.quotation{text-align:center;border-radius:30px;padding:10px;font-style:italic;color:#ccc}.footnote{text-align:center}.footnote p{color:#ccc;font-size:14px}.golden-path p{line-height:1.4em}.heading,.problem-expanded h3{text-align:center;font-size:100px;color:#ff9d00;font-family:'retro';padding:0;margin-bottom:60px;margin-top:0;text-shadow:-2px -2px 0 #fff,2px -2px 0 #fff,-2px 2px 0 #fff,2px 2px 0 #fff}h1.heading{font-size:163px}.problem-expanded h3{font-size:60px;text-align:left;margin-bottom:0}.problem-expanded p{padding-bottom:30px}.section{margin:20px 20px 60px 20px;padding:20px 20px 40px 20px;border-bottom:2px solid #666}.problem-section{position:relative;min-height:375px}.problem-section h2{position:absolute;top:50%;left:50%;background:#fff;border-radius:50%;margin-left:-200px;margin-top:-100px;border:4px solid #62c7cc}ul.problem-diagram{list-style:none}.problem{position:absolute;font-size:20px}.problem-1{top:100px;left:20px}.problem-2{top:45px;left:200px}.problem-3{top:25px;left:500px}.problem-4{top:75px;left:700px}.problem-5{top:200px;left:730px}.problem-6{top:275px;left:530px}.problem-7{top:250px;left:200px}.problem-8{top:200px;left:20px}.problem-diagram .number{font-weight:bold;text-align:center;display:inline-block;background:#fff;border-radius:50%;border:4px solid #62c7cc;height:20px;color:#ff9d00;width:20px;margin-right:10px;padding:5px}em{color:#ff9d00}sub{color:#666;font-size:14px}@media (max-width: 1023px){h1.heading{font-size:105px}.heading,.problem-expanded h3{font-size:60px}.problem-section h2{position:static}.problem{position:static;margin-bottom:20px}.section{margin:10px 10px 30px 10px;padding:10px 10px 20px 10px}.problem-section h2{background:none;border-radius:50%;margin-left:0;margin-top:0;border:0}}.portfolio{margin:0;padding:0;background:#424242;background:-moz-linear-gradient(top, #424242 2%, #fff 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(2%, #424242), color-stop(100%, #fff));background:-webkit-linear-gradient(top, #424242 2%, #fff 100%);background:-o-linear-gradient(top, #424242 2%, #fff 100%);background:-ms-linear-gradient(top, #424242 2%, #fff 100%);background:linear-gradient(to bottom, #424242 2%, #fff 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='$grey', endColorstr='$white',GradientType=0 )}.tesselation{padding:20px 50px 50px;background:url(../images/tessellations.png) repeat 0 0}.portfolio-item{min-height:135px;padding-right:200px;clear:both}.portfolio-item p{margin-bottom:0}.portfolio-thumbnail{margin:0 30px 20px 0;border:2px solid #424242;width:150px;height:150px;border-radius:30px;background:#fff}.portfolio-thumbnail-link{display:block;float:left;position:relative}.portfolio-thumb-hover{position:absolute;top:0;left:0;transition:all 0.5s;opacity:0;width:154px;height:154px;border-radius:30px;background:#424242}.portfolio-thumbnail-link:hover .portfolio-thumb-hover,.portfolio-thumbnail-link:focus .portfolio-thumb-hover{opacity:0.4}@media (max-width: 1023px){.tesselation{padding-bottom:100px}.portfolio-item{padding-right:0}}@media (max-width: 767px){.tesselation{padding:10px 10px 200px 10px}.portfolio-item{text-align:center;padding-right:0;min-height:auto;padding-bottom:50px}.portfolio-item p{margin-top:5px}.portfolio-thumbnail{float:none;margin:0}.portfolio-thumbnail-link{float:none;width:150px;margin:0 auto}}.footer{background:#F16A3B;color:#fff;position:relative}.spaceship{position:absolute;bottom:5px;right:10px}.footer p{padding:10px;margin:0;font-size:14px;line-height:14px}@media (max-width: 767px){.spaceship{right:-5px}}.homepage{text-align:left;width:1039px}.homepage .header{text-align:center}.homepage .section{clear:both;position:relative;border:0;background:#fff;border-radius:30px;margin:0 0 50px 0;border:2px solid #424242;padding:20px 50px 50px 50px}.homepage h1{font-size:78px;line-height:30px;margin-bottom:65px;text-shadow:-2px -2px 0 #424242,2px -2px 0 #424242,-2px 2px 0 #424242,2px 2px 0 #424242}.homepage h2{line-height:20px;font-size:70px;color:#f16a3b;font-family:'retro';margin-bottom:70px;text-shadow:-2px -2px 0 #424242,2px -2px 0 #424242,-2px 2px 0 #424242,2px 2px 0 #424242}.homepage h3{line-height:40px;font-size:40px;color:#f16a3b;font-family:'retro';margin-bottom:10px}.homepage a:hover,.homepage a:focus,.homepage a:active{color:#92b72d;transition:all 0.5s}.homepage .logo{padding:20px 0 20px 0;display:inline-block;text-indent:-9999px;display:block;width:898px;height:256px;margin:0 auto;background:url(../images/logo.png) no-repeat 0 0}.profile{border:2px solid #424242;float:right;margin:0 0 20px 40px;border-radius:30px}.homepage .section-intro p{margin-right:250px}.homepage p{color:#424242;font-size:16px;line-height:26px;margin-bottom:30px}.homepage .navigation{text-align:center}.homepage .navigation ul,.homepage .navigation li{display:inline-block;padding:0;margin:0}.homepage .navigation ul{margin-left:-10px}.homepage .navigation li{font-family:'retro';font-size:48px}.homepage .navigation a{display:block;padding:20px 16px;text-transform:uppercase}.homepage .navigation a:hover,.homepage .navigation a:focus,.homepage .navigation a:active{color:#fff;transition:all 0.5s}@media (max-width: 1023px){.homepage{width:100%}.homepage .logo{width:668px;height:190px;background-size:668px 190px;padding-bottom:0}.homepage h1{font-size:56px;margin-bottom:30px;margin-top:30px}.homepage .section{margin:0 0 25px 0;padding:10px 25px 50px 25px}.homepage .lead{text-align:left}.homepage .section-intro p{margin-right:0}.homepage .navigation ul{margin-left:-8px}}@media (max-width: 767px){.mobile-hidden{display:none}.homepage .logo{width:300px;height:86px;background-size:300px 86px;padding-bottom:0}.homepage h1{font-size:75px;line-height:1.2em;margin-bottom:20px;margin-top:0}.homepage h2{font-size:50px;margin-bottom:50px;margin-top:20px}.homepage h3{margin-top:10px;margin-bottom:0}.profile{float:none;margin:0 0 10px 0;width:250px;height:250px}.homepage .section{margin:0 0 10px 0;padding:20px;text-align:center}.homepage .section-intro p{margin-right:0;text-align:left;padding-right:5px;padding-left:5px}.homepage .navigation ul,.homepage .navigation li{display:block}.homepage .navigation ul{margin-left:0;padding-bottom:10px}.homepage .navigation a{padding:5px 0}}
+@charset "UTF-8";
+@font-face {
+  font-family: 'retro';
+  src: url("../fonts/retro.eot");
+  src: local("☺"), url("../fonts/retro.woff") format("woff"), url("../fonts/retro.ttf") format("truetype"), url("../fonts/retro.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000318}}
+body {
+  padding: 50px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #424242;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000327}}
+a {
+  color: #62c7cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000332}}
+.demo-link a {
+  color: #92b72d;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000336}}
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000341}}
+.viewport canvas {
+  width: 1024px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000345}}
+h1 {
+  font-size: 120px;
+  color: #f16a3b;
+  font-family: 'retro';
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000353}}
+.lead {
+  color: #62c7cc;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media (max-width: 1023px) {
+@media -sass-debug-info{filename{}line{font-family:\0000360}}
+  .lead {
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{}line{font-family:\0000363}}
+  .wrapper {
+    width: 100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\000031}}
+.presentation {
+  background: white;
+  color: #424242;
+  padding: 120px 50px 150px;
+  font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\000037}}
+.demo {
+  background: white;
+  color: #424242;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000312}}
+.presentation .wrapper, .demo .wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+}
+
+/* Slideshow controls */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000320}}
+#canvas {
+  width: 300px;
+  height: 600px;
+  position: fixed;
+  top: 250px;
+  right: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000328}}
+.presentation .controls {
+  text-align: center;
+  position: fixed;
+  top: 250px;
+  right: 50px;
+  width: 300px;
+  height: 500px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000337}}
+.lights, .arrows {
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000341}}
+.lights {
+  margin-bottom: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000345}}
+.presentation .logo {
+  padding-top: 0;
+  top: 20px;
+  position: fixed;
+  right: 50px;
+  z-index: 2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000353}}
+.slideshow {
+  width: 1024px;
+  border-top: 30px solid #424242;
+  padding-top: 2px;
+  border-bottom: 30px solid #424242;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000360}}
+.slide {
+  height: 700px;
+  border-bottom: 16px solid #f16a3b;
+  border-top: 8px solid #62c7cc;
+  margin-bottom: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000361}}
+.slide-content {
+  position: relative;
+  height: 650px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000363}}
+.slide .slide-content {
+  opacity: 0.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000364}}
+.slide.active .slide-content {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000366}}
+.slide ul {
+  margin-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000370}}
+.fig {
+  text-align: center;
+  padding-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000375}}
+.fig.coords {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  top: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000382}}
+.fig.angles {
+  right: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000386}}
+.notes {
+  display: none;
+}
+
+/* Demos */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000392}}
+.output {
+  margin: 20px;
+  position: absolute;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\0000397}}
+.output-item {
+  float: left;
+  margin-right: 10px;
+  width: 12%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003103}}
+.angle-item {
+  width: 30%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003107}}
+.hand {
+  width: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003109}}
+.vector-comp {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003112}}
+.val-name {
+  color: #62c7cc;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003118}}
+.finger-inactive {
+  color: #f16a3b;
+}
+
+/* three js demo */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003123}}
+.code-sample {
+  clear: both;
+  width: 850px;
+  background: #444;
+  color: white;
+  margin: 0 auto;
+  font-family: courier;
+  font-size: 20px;
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003134}}
+.code-sample p {
+  margin: 5px;
+}
+
+/*
+  RGB XYZ colours from three js helper axis 
+  x pitch
+  z roll
+  y yaw
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003145}}
+.roll-val {
+  color: #f16a3b;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003146}}
+.yaw-val {
+  color: #92b72d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003147}}
+.pitch-val {
+  color: #62c7cc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_presentation\.scss}line{font-family:\00003149}}
+.control-item {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+/* Golden path styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\000034}}
+.golden-path {
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\000037}}
+.golden-path .lead {
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000312}}
+.quotation {
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000320}}
+.footnote {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000324}}
+.footnote p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000329}}
+.golden-path p {
+  line-height: 1.4em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000333}}
+.heading, .problem-expanded h3 {
+  text-align: center;
+  font-size: 100px;
+  color: #ff9d00;
+  font-family: 'retro';
+  padding: 0;
+  margin-bottom: 60px;
+  margin-top: 0;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000348}}
+h1.heading {
+  font-size: 163px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000352}}
+.problem-expanded h3 {
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000358}}
+.problem-expanded p {
+  padding-bottom: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000362}}
+.section {
+  margin: 20px 20px 60px 20px;
+  padding: 20px 20px 40px 20px;
+  border-bottom: 2px solid #666;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000368}}
+.problem-section {
+  position: relative;
+  min-height: 375px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000372}}
+.problem-section h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: white;
+  border-radius: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  border: 4px solid #62c7cc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000385}}
+ul.problem-diagram {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000388}}
+.problem {
+  position: absolute;
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000393}}
+.problem-1 {
+  top: 100px;
+  left: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\0000398}}
+.problem-2 {
+  top: 45px;
+  left: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003103}}
+.problem-3 {
+  top: 25px;
+  left: 500px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003108}}
+.problem-4 {
+  top: 75px;
+  left: 700px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003113}}
+.problem-5 {
+  top: 200px;
+  left: 730px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003118}}
+.problem-6 {
+  top: 275px;
+  left: 530px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003123}}
+.problem-7 {
+  top: 250px;
+  left: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003128}}
+.problem-8 {
+  top: 200px;
+  left: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003133}}
+.problem-diagram .number {
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  border: 4px solid #62c7cc;
+  height: 20px;
+  color: #ff9d00;
+  width: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003146}}
+em {
+  color: #ff9d00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003149}}
+sub {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003155}}
+  h1.heading {
+    font-size: 105px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003158}}
+  .heading, .problem-expanded h3 {
+    font-size: 60px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003160}}
+  .problem-section h2 {
+    position: static;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003163}}
+  .problem {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003167}}
+  .section {
+    margin: 10px 10px 30px 10px;
+    padding: 10px 10px 20px 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_golden-path\.scss}line{font-family:\00003172}}
+  .problem-section h2 {
+    background: none;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-top: 0;
+    border: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\000033}}
+.portfolio {
+  margin: 0;
+  padding: 0;
+  background: #424242;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #424242 2%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #424242), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #424242 2%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #424242 2%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #424242 2%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #424242 2%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$grey', endColorstr='$white',GradientType=0 );
+  /* IE6-9 */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000316}}
+.tesselation {
+  padding: 20px 50px 50px;
+  background: url(../images/tessellations.png) repeat 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000321}}
+.portfolio-item {
+  min-height: 135px;
+  padding-right: 200px;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000327}}
+.portfolio-item p {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000331}}
+.portfolio-thumbnail {
+  margin: 0 30px 20px 0;
+  border: 2px solid #424242;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000340}}
+.portfolio-thumbnail-link {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000346}}
+.portfolio-thumb-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  opacity: 0;
+  width: 154px;
+  height: 154px;
+  border-radius: 30px;
+  background: #424242;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000359}}
+.portfolio-thumbnail-link:hover .portfolio-thumb-hover, .portfolio-thumbnail-link:focus .portfolio-thumb-hover {
+  opacity: 0.4;
+}
+
+@media (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000365}}
+  .tesselation {
+    padding-bottom: 100px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000369}}
+  .portfolio-item {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000375}}
+  .tesselation {
+    padding: 10px 10px 200px 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000379}}
+  .portfolio-item {
+    text-align: center;
+    padding-right: 0;
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000386}}
+  .portfolio-item p {
+    margin-top: 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000389}}
+  .portfolio-thumbnail {
+    float: none;
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_portfolio\.scss}line{font-family:\0000393}}
+  .portfolio-thumbnail-link {
+    float: none;
+    width: 150px;
+    margin: 0 auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_footer\.scss}line{font-family:\000031}}
+.footer {
+  background: #F16A3B;
+  color: #fff;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_footer\.scss}line{font-family:\000036}}
+.spaceship {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_footer\.scss}line{font-family:\0000311}}
+.footer p {
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_footer\.scss}line{font-family:\0000319}}
+  .spaceship {
+    right: -5px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\000033}}
+.homepage {
+  text-align: left;
+  width: 1039px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\000038}}
+.homepage .header {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000312}}
+.homepage .section {
+  clear: both;
+  position: relative;
+  border: 0;
+  background: white;
+  border-radius: 30px;
+  margin: 0 0 50px 0;
+  border: 2px solid #424242;
+  padding: 20px 50px 50px 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000323}}
+.homepage h1 {
+  font-size: 78px;
+  line-height: 30px;
+  margin-bottom: 65px;
+  text-shadow: -2px -2px 0 #424242, 2px -2px 0 #424242, -2px 2px 0 #424242, 2px 2px 0 #424242;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000330}}
+.homepage h2 {
+  line-height: 20px;
+  font-size: 70px;
+  color: #f16a3b;
+  font-family: 'retro';
+  margin-bottom: 70px;
+  text-shadow: -2px -2px 0 #424242, 2px -2px 0 #424242, -2px 2px 0 #424242, 2px 2px 0 #424242;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000339}}
+.homepage h3 {
+  line-height: 40px;
+  font-size: 40px;
+  color: #f16a3b;
+  font-family: 'retro';
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000347}}
+.homepage a:hover, .homepage a:focus, .homepage a:active {
+  color: #92b72d;
+  transition: all 0.5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000352}}
+.homepage .logo {
+  padding: 20px 0 20px 0;
+  display: inline-block;
+  text-indent: -9999px;
+  display: block;
+  width: 898px;
+  height: 256px;
+  margin: 0 auto;
+  background: url(../images/logo.png) no-repeat 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000363}}
+.profile {
+  border: 2px solid #424242;
+  float: right;
+  margin: 0 0 20px 40px;
+  border-radius: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000370}}
+.homepage .section-intro p {
+  margin-right: 250px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000374}}
+.homepage p {
+  color: #424242;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000381}}
+.homepage .navigation {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000385}}
+.homepage .navigation ul, .homepage .navigation li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000391}}
+.homepage .navigation ul {
+  margin-left: -10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\0000395}}
+.homepage .navigation li {
+  font-family: 'retro';
+  font-size: 48px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003100}}
+.homepage .navigation a {
+  display: block;
+  padding: 20px 16px;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003105}}
+.homepage .navigation a:hover, .homepage .navigation a:focus, .homepage .navigation a:active {
+  color: white;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003111}}
+  .homepage {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003115}}
+  .homepage .logo {
+    width: 668px;
+    height: 190px;
+    background-size: 668px 190px;
+    padding-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003121}}
+  .homepage h1 {
+    font-size: 56px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003127}}
+  .homepage .section {
+    margin: 0 0 25px 0;
+    padding: 10px 25px 50px 25px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003131}}
+  .homepage .lead {
+    text-align: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003135}}
+  .homepage .section-intro p {
+    margin-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003138}}
+  .homepage .navigation ul {
+    margin-left: -8px;
+  }
+}
+@media (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003144}}
+  .mobile-hidden {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003147}}
+  .homepage .logo {
+    width: 300px;
+    height: 86px;
+    background-size: 300px 86px;
+    padding-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003153}}
+  .homepage h1 {
+    font-size: 75px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003159}}
+  .homepage h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003164}}
+  .homepage h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003169}}
+  .profile {
+    float: none;
+    margin: 0 0 10px 0;
+    width: 250px;
+    height: 250px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003176}}
+  .homepage .section {
+    margin: 0 0 10px 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003181}}
+  .homepage .section-intro p {
+    margin-right: 0;
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003188}}
+  .homepage .navigation ul, .homepage .navigation li {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003191}}
+  .homepage .navigation ul {
+    margin-left: 0;
+    padding-bottom: 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mairead\/Documents\/geekgirl\/stylesheets\/sass\/partials\/_homepage\.scss}line{font-family:\00003195}}
+  .homepage .navigation a {
+    padding: 5px 0;
+  }
+}
+/*
+.viewport-1 canvas{
+  width: 838px;
+}
+.viewport-2 canvas{
+  width: 838px;
+}*/
+@media -sass-debug-info{filename{}line{font-family:\0000383}}
+.cardboard-demo {
+  width: auto;
+}
+
+@media -sass-debug-info{filename{}line{font-family:\0000387}}
+.viewport-1, .viewport-2 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  /*border: 1px solid;*/
+}
+
+/*.viewport-1{
+  border: 1px solid red;
+}
+
+.viewport-2{
+  border: 1px solid blue;
+}
+*/

@@ -72,5 +72,34 @@ h1{
 @import 'partials/homepage';
 
 
+/*
+.viewport-1 canvas{
+  width: 838px;
+}
+.viewport-2 canvas{
+  width: 838px;
+}*/
+
+.cardboard-demo{
+  width: auto; 
+}
+
+.viewport-1, .viewport-2{
+  float: left;
+  width: 50%;
+  height: 50%;
+  /*border: 1px solid;*/
+}
+
+
+/*.viewport-1{
+  border: 1px solid red;
+}
+
+.viewport-2{
+  border: 1px solid blue;
+}
+*/
+
 
 

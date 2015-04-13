@@ -1,4 +1,4 @@
-Geek Girl slides
+Slideshow blank
 ===========
 
-Leap motion presentation
+Leap motion controlled presentation slides

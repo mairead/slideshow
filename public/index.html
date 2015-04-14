@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Leap into the unknown</title>
+		<title>Three.js Workshop</title>
 		<!-- CSS -->
   	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" >
 
@@ -14,8 +14,6 @@
 			<img src="/images/presentation-logo.png" />
 		</div>
 			<div class="slideshow" id="slideshow">
-
-				
 
 				<!-- //sample slide -->
 				<!--<div class="slide active">
@@ -41,7 +39,7 @@
 				<!-- //slide 1 Welcome -->
 				<div class="slide active">
 					<div class="slide-content">
-						<h1 id="slide-1">Welcome!</h1>
+						<h1 id="slide-1">WebGL and Three.js</h1>
 					</div>
 				</div> 
 
@@ -49,7 +47,7 @@
 				<div class="slide">
 					<div class="slide-content">
 						<h1 id="slide-2">Hello</h1>
-						<p class="lead">My name is Mairead.</p>
+						<p class="lead">My name is Mairead</p>
 						<ul>
 							<li>
 								<p>15 years in web industry</p>
@@ -61,13 +59,165 @@
 								<p>Interested in interaction paradigms</p>
 							</li>
 						</ul>
-						<div class="notes">
-							<p>- growth of responsive and touch screen</p>
-							<p>- internet of things</p>
-							<p>- led me to explore 3D input and kinect</p>
-						</div>
 					</div>
 				</div>
+
+				<!-- //slide 3-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-3">What is WebGL?</h1>
+						<p class="lead">WebGL canvas context</p>
+						<ul>
+							<li>
+								<p>Web GL exposes Javascript API</p>
+							</li>
+							<li>
+								<p>GLSL written in C like syntax</p>
+							</li>
+							<li>
+								<p>Heavily optimised for GPU</p>
+							</li>
+							<li>
+								<p>Vertex and Fragment Shaders</p>
+							</li>	
+					</div>
+				</div> 
+
+				<!-- //slide 4-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-4">What is Three.js?</h1>
+						<p class="lead">Mr.Doob = Legend</p>
+						<ul>
+							<li>
+								<p>Camera</p>
+							</li>
+							<li>
+								<p>Core - including Geometry</p>
+							</li>
+							<li>
+								<p>Lights</p>
+							</li>
+							<li>
+								<p>Materials</p>
+							</li>
+						</ul>
+					</div>
+				</div> 
+
+				<!-- //slide 5-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-5">Boilerplate code</h1>
+						<ul>
+							<li>
+								<p>Download from github <a href="https://github.com/mairead/lwc-boilerplate">https://github.com/mairead/lwc-boilerplate</a></p>
+							</li>
+
+							<li>
+								<p>Creates canvas object in HTML and sets dimensions</p>
+							</li>
+							<li>
+								<p>Default lighting, camera, grid, scene and renderer</p>
+							</li>
+							<li>
+								<p>Call to render has to be added last </p>
+							</li>
+						</ul>
+					</div>
+				</div> 
+
+				<!-- //slide 6-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-6">Basic geometry</h1>
+						<div class="code-block">
+							var material = new THREE.MeshBasicMaterial( { color: 0xFF0000 } ); <br>
+							var geometry = new THREE.SphereGeometry(4,20,20); <br>
+							var mesh = new THREE.Mesh( geometry, material ); <br>
+							mesh.position.set(10, 2, 0); <br>
+							scene.add( mesh );
+						</div>
+					</div>
+				</div> 
+
+				<!-- //slide 7-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-7">Adding materials</h1>
+						<div class="code-block">
+							material = new THREE.MeshPhongMaterial( { color: 0x0000FF} ); <br>
+							material = new THREE.MeshLambertMaterial( { color: 0x00FF00 } ); <br>
+							material = new THREE.MeshNormalMaterial( ); <br>
+						</div>
+					</div>
+				</div> 
+
+				<!-- //slide 8-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-8">Changing lighting</h1>
+
+						<div class="code-block">
+							spotlight = new THREE.SpotLight(0xFFFFFF); <br>
+							spotlight.position.set(300, 300, 0); <br>
+							spotlight.lookAt(mesh); <br>
+							spotlight.angle = Math.PI/3; <br>
+							spotlight.intensity = 1; <br>
+							spotlight.distance = 0; <br>
+							scene.add(spotlight); <br>
+							material.needsUpdate = true; <br>
+						</div>
+					</div>
+				</div> 
+
+				<!-- //slide 9-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-9">Moving camera</h1>
+						<div class="code-block">
+							camera.position.set(30, 10, 10); <br>
+							camera.lookAt(scene.position); <br>
+						</div>
+					</div>
+				</div> 
+
+				<!-- //slide 10-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-10">Animating scene</h1>
+						<div class="code-block">
+							var pos = 10; <br>
+							function render() { <br>
+							   &nbsp;&nbsp;pos = pos + 1; <br>
+							   &nbsp;&nbsp;camera.position.set(pos, 10, 10); <br>
+							   &nbsp;&nbsp;renderer.render(scene, camera); <br>
+							   &nbsp;&nbsp;requestAnimationFrame(render); <br>
+						} <br>
+						render(); <br>
+						</div>
+					</div>
+				</div> 
+
+				<!-- //slide 11-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-11">Rigged Hand demo</h1>
+					</div>
+				</div> 
+
+				<!-- //slide 12-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-12">Thanks for coming!</h1>
+					</div>
+				</div> 
+
+
+
+		
+
+
 
 				
 			<!-- End of slideshow -->

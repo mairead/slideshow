@@ -72,14 +72,6 @@ h1{
 @import 'partials/homepage';
 
 
-/*
-.viewport-1 canvas{
-  width: 838px;
-}
-.viewport-2 canvas{
-  width: 838px;
-}*/
-
 .cardboard-demo{
   width: auto; 
 }
@@ -101,5 +93,10 @@ h1{
 }
 */
 
-
+.code-block{
+  background: #eee;
+  padding: 20px;
+  line-height: 50px;
+  font-size: 28px;
+}
 

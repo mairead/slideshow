@@ -15,33 +15,12 @@
 		</div>
 			<div class="slideshow" id="slideshow">
 
-				<!-- //sample slide -->
-				<!--<div class="slide active">
-					<div class="slide-content">
-						<h1 id="slide-1">Welcome!</h1>
-						<p class="lead">My name is Mairead.</p>
-						<div class="fig">
-							<img src="/images/stack.png">
-						</div>
-						<ul>
-							<li>
-								<p>10+ years in web industry</p>
-							</li>
-						</ul>
-						<p class="demo-link"><a href="http://threejs.org/" target="_blank">Three JS Documentation</a></p>
-						<div class="notes">
-							<p>- Brief run down of devices available. How do they work</p>
-						</div>
-	
-					</div>
-				</div> -->
-
 				<!-- //slide 1 Welcome -->
 				<div class="slide active">
 					<div class="slide-content">
 						<h1 id="slide-1">WebGL and Three.js</h1>
 					</div>
-				</div> 
+				</div>
 
 				<!-- //slide 2 introduction -->
 				<div class="slide">
@@ -58,6 +37,10 @@
 							<li>
 								<p>Interested in interaction paradigms</p>
 							</li>
+							<li>
+								<p>Apologies for numerous code slides</p>
+							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -65,11 +48,11 @@
 				<!-- //slide 3-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-3">What is WebGL?</h1>
+						<h1 id="slide-3">What is GLSL?</h1>
 						<p class="lead">WebGL canvas context</p>
 						<ul>
 							<li>
-								<p>Web GL exposes Javascript API</p>
+								<p>Short hand for OpenGL Shader Language</p>
 							</li>
 							<li>
 								<p>GLSL written in C like syntax</p>
@@ -78,16 +61,52 @@
 								<p>Heavily optimised for GPU</p>
 							</li>
 							<li>
-								<p>Vertex and Fragment Shaders</p>
-							</li>	
+								<p>Two flavours: Vertex and Fragment Shaders</p>
+							</li>
 					</div>
-				</div> 
+				</div>
 
 				<!-- //slide 4-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-4">What is Three.js?</h1>
+						<h1 id="slide-4">What is WebGL?</h1>
+						<p class="lead">WebGL canvas context</p>
+						<ul>
+							<li>
+								<p>Web GL exposes Javascript API</p>
+							</li>
+							<li>
+								<p>Combines with GLSL underneath</p>
+							</li>
+							<li>
+								<p>You can write your own shaders. Not trivial</p>
+							</li>
+					</div>
+				</div>
+
+				<!-- //slide 5-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-5">What is Three.js?</h1>
 						<p class="lead">Mr.Doob = Legend</p>
+						<ul>
+							<li>
+								<p>Industry standard</p>
+							</li>
+							<li>
+								<p>Abstraction layer over Shaders</p>
+							</li>
+							<li>
+								<p>Reduce massive complexity into simple API</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+								<!-- //slide 6-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-6">Three.js Core components</h1>
 						<ul>
 							<li>
 								<p>Camera</p>
@@ -103,17 +122,17 @@
 							</li>
 						</ul>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 5-->
+				<!-- //slide 7-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-5">Boilerplate code</h1>
+						<h1 id="slide-7">Boilerplate code</h1>
+						<p class="lead">Show boilerplate run through</p>
 						<ul>
 							<li>
 								<p>Download from github <a href="https://github.com/mairead/lwc-boilerplate">https://github.com/mairead/lwc-boilerplate</a></p>
 							</li>
-
 							<li>
 								<p>Creates canvas object in HTML and sets dimensions</p>
 							</li>
@@ -125,12 +144,13 @@
 							</li>
 						</ul>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 6-->
+				<!-- //slide 8-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-6">Basic geometry</h1>
+						<h1 id="slide-8">Basic geometry</h1>
+						<p class="lead">Show geometry demo</p>
 						<div class="code-block">
 							var material = new THREE.MeshBasicMaterial( { color: 0xFF0000 } ); <br>
 							var geometry = new THREE.SphereGeometry(4,20,20); <br>
@@ -139,25 +159,26 @@
 							scene.add( mesh );
 						</div>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 7-->
+				<!-- //slide 9-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-7">Adding materials</h1>
+						<h1 id="slide-9">Adding materials</h1>
+						<p class="lead">Show materials demo</p>
 						<div class="code-block">
 							material = new THREE.MeshPhongMaterial( { color: 0x0000FF} ); <br>
 							material = new THREE.MeshLambertMaterial( { color: 0x00FF00 } ); <br>
 							material = new THREE.MeshNormalMaterial( ); <br>
 						</div>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 8-->
+				<!-- //slide 10-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-8">Changing lighting</h1>
-
+						<h1 id="slide-10">Changing lighting</h1>
+						<p class="lead">Show lighting demo</p>
 						<div class="code-block">
 							spotlight = new THREE.SpotLight(0xFFFFFF); <br>
 							spotlight.position.set(300, 300, 0); <br>
@@ -169,23 +190,26 @@
 							material.needsUpdate = true; <br>
 						</div>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 9-->
+				<!-- //slide 11-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-9">Moving camera</h1>
+						<h1 id="slide-11">Moving camera</h1>
+						<p class="lead">Show camera demo</p>
 						<div class="code-block">
 							camera.position.set(30, 10, 10); <br>
 							camera.lookAt(scene.position); <br>
+							camera.lookAt(mesh.position); <br>
 						</div>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 10-->
+				<!-- //slide 12-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-10">Animating scene</h1>
+						<h1 id="slide-12">Animating scene</h1>
+						<p class="lead">Show animation demo</p>
 						<div class="code-block">
 							var pos = 10; <br>
 							function render() { <br>
@@ -197,36 +221,116 @@
 						render(); <br>
 						</div>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 11-->
+				<!-- //slide 13-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-11">Rigged Hand demo</h1>
+						<h1 id="slide-13">Creating sophisticated Mesh objects</h1>
+						<ul>
+							<li>
+								<p>Blender, Maya, 3D Studio Max</p>
+							</li>
+							<li>
+								<p>Blender is free and has large community</p>
+							</li>
+							<li>
+								<p>Libraries of pre-made objects</p>
+							</li>
+						</ul>
 					</div>
-				</div> 
+				</div>
 
-				<!-- //slide 12-->
+				<!-- //slide 14-->
 				<div class="slide">
 					<div class="slide-content">
-						<h1 id="slide-12">Thanks for coming!</h1>
+						<h1 id="slide-14">Export to JSON</h1>
+						<p class="lead">Show JSON run through</p>
+						<ul>
+							<li>
+								<p>Contains data for Vertex and Fragments</p>
+							</li>
+							<li>
+								<p>Contains materials data</p>
+							</li>
+							<li>
+								<p>Contains other properties for use in Animation such as bones</p>
+							</li>
+							<li>
+								<p>Import to Three.js using JSONLoader object</p>
+							</li>
+
+						</ul>
 					</div>
-				</div> 
+				</div>
 
+				<!-- //slide 15-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-15">Leap JS project</h1>
+						<ul>
+							<li>
+								<p>Moving hand work part of VR project</p>
+							</li>
+							<li>
+								<p>Using moving hand in front of face</p>
+							</li>
+							<li>
+								<p>Experimental work Combined with Google Cardboard</p>
+							</li>
+						</ul>
+					</div>
+				</div>
 
+				<!-- //slide 16-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-16">Rigged Hand demo</h1>
+						<p class="lead">Show moving hand demo</p>
+						<ul>
+							<li>
+								<p>Leap motion 3D motion sensing</p>
+							</li>
+							<li>
+								<p>3D model with skeletal hand rigging</p>
+							</li>
+							<li>
+								<p>Leap Js plugin controls frame animations</p>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-		
+				<!-- //slide 17-->
+				<div class="slide">
+					<div class="slide-content">
+						<h1 id="slide-17">Thanks for coming!</h1>
+						<ul>
+							<li>
+								<p>You can reach me <a href="https://twitter.com/tiny_m">twitter.com/tiny_m</a></p>
+							</li>
+							<li>
+								<p>
+									Workshop files can be found at <a href="https://github.com/mairead/lwc-boilerplate">github.com/mairead/lwc-boilerplate</a>
+								</p>
+							</li>
+							<li>
+								<p>Slides can be found at <a href="http://www.emdeebeebee.com/lwc-workshop">www.emdeebeebee.com/lwc-workshop</a></p>
+							</li>
+							<li>
+								<p>Leap JS and Google Cardboard code also on Github</p>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-
-
-				
 			<!-- End of slideshow -->
 
 			 <div class="controls">
 		      <img src="images/lights.png" id="lights" class="lights">
 		      <img src="images/arrows.png" id="arrows" class="arrows">
 		  </div>
-    
+
     <canvas id="canvas"></canvas>
 
 		</div>
@@ -234,5 +338,5 @@
     <script src="javascripts/jquery.js"></script>
 		<script src="javascripts/leap.min.js"></script>
 		<script src="javascripts/presentation.js"></script>
-	</body>			
+	</body>
 </html>

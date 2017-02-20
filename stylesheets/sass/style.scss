@@ -18,7 +18,7 @@ $white : #ffffff;
 body {
   padding: 50px;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: $grey; 
+  background: $grey;
   color: $white;
   margin: 0px;
   padding: 0px;
@@ -56,6 +56,18 @@ h1{
   font-size: 40px;
 }
 
+.demo-note{
+  color: #ccc;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.corp-logo{
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+}
+
 @media (max-width: 1023px) {
   .lead{
     text-align: center;
@@ -73,7 +85,7 @@ h1{
 
 
 .cardboard-demo{
-  width: auto; 
+  width: auto;
 }
 
 .viewport-1, .viewport-2{

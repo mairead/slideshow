@@ -60,8 +60,8 @@
 .slide{height:700px; border-bottom:16px solid $red;border-top:8px solid $turquoise; margin-bottom:2px;}
 .slide-content{position:relative;height:650px;}
 
-.slide .slide-content{opacity:0.5;}
-.slide.active .slide-content{opacity:1;}
+// .slide .slide-content{opacity:0.5;}
+// .slide.active .slide-content{opacity:1;}
 
 .slide ul{
   margin-top:50px;
@@ -136,12 +136,12 @@
 }
 
 /*
-  RGB XYZ colours from three js helper axis 
+  RGB XYZ colours from three js helper axis
   x pitch
   z roll
   y yaw
 */
-    
+
 .roll-val{color:$red;}
 .yaw-val{color:$green;}
 .pitch-val{color:$turquoise;}
